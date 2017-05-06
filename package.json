@@ -1,0 +1,23 @@
+{
+  "name": "NavExercise",
+  "description": "Exercise for candidates to complete where they will build a responsive nav driven from json",
+  "version": "0.2.0",
+  "authors": [
+    "Erik Bengtsson <ebengtsson@helloelephant.com>",
+    "Karl Stanton <kstanton@hugeinc.com>"
+  ],
+  "license": "© 2016 Elephant LLC. All Rights Reserved.",
+  "homepage": "http://helloelephant.com",
+  "bugs": {
+    "url": ""
+  },
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "morgan": "~1.0.0"
+  }
+}

@@ -1,18 +1,274 @@
-@import "fonts.css";
+@font-face {
+  font-family: "Founders Grotesk Light";
+  src: url("fonts/light/FoundersGrotesk-Light.eot");
+  src: url("fonts/light/FoundersGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("fonts/light/FoundersGrotesk-Light.woff") format("woff"), url("fonts/light/FoundersGrotesk-Light.ttf") format("truetype"), url("fonts/light/FoundersGrotesk-Light.svg#founders_grotesk_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
+@font-face {
+  font-family: "Founders Grotesk Medium";
+  src: url("fonts/medium/FoundersGrotesk-Medium.eot");
+  src: url("fonts/medium/FoundersGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/medium/FoundersGrotesk-Medium.woff") format("woff"), url("fonts/medium/FoundersGrotesk-Medium.ttf") format("truetype"), url("fonts/medium/FoundersGrotesk-Medium.svg#founders_grotesk_medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url("fonts/regular/FoundersGrotesk-Regular.eot");
+  src: url("fonts/regular/FoundersGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/regular/FoundersGrotesk-Regular.woff") format("woff"), url("fonts/regular/FoundersGrotesk-Regular.ttf") format("truetype"), url("fonts/regular/FoundersGrotesk-Regular.svg#founders_grotesk_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .headline {
+    font-size: 48px;
+    line-height: 50px;
+    font-family: "Founders Grotesk Light";
+    font-weight: 300; }
+  .body-copy {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: "Founders Grotesk Light";
+    font-weight: 300; }
+  .copyright {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: "Founders Grotesk Light";
+    font-weight: 300; }
+  #navbar {
+    position: absolute;
+    top: 72px;
+    left: -400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: auto;
+    min-height: 800px;
+    z-index: 3;
+    transition: left 500ms; }
+  #navbar.slide-right {
+    left: 0px;
+    transition: left 500ms; }
+  #mobile-nav-header {
+    width: 100%;
+    background-color: black;
+    height: 72px; }
+  .main-nav-item {
+    text-align: left; }
+  .main-nav-item > a {
+    margin-left: 50px; }
+  .sub-nav-item {
+    display: none; }
+  .show > .sub-nav-item {
+    display: block;
+    padding-left: 75px;
+    text-align: left; }
+  .chevron {
+    margin-top: 20px;
+    margin-right: -40px;
+    float: left;
+    margin-left: 30px;
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-top: 0.2rem solid #ffffff;
+    border-right: 0.2rem solid #ffffff;
+    box-shadow: 0 0 0 lightgray;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+    transition: transform 500ms; }
+  .chevron.rotate {
+    transform: translate3d(0, -50%, 0) rotate(135deg);
+    transition: transform 500ms; }
+  #logo {
+    position: absolute;
+    left: -200px;
+    padding-top: 20px;
+    color: #ffffff;
+    transition: left 500ms; }
+  #logo.slide-right {
+    position: absolute;
+    left: 20px;
+    transition: left 500ms; }
+  #toggle-mobile.slide-left {
+    background-image: url(../images/toggle-open.svg);
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 0px;
+    cursor: pointer;
+    transition: left 500ms, background-image 1000ms; }
+  #toggle-mobile.slide-right {
+    position: absolute;
+    background-image: url(../images/toggle-close.svg);
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+    left: 180px;
+    transition: left 500ms, background-image 1000ms; } }
+
+@font-face {
+  font-family: "Founders Grotesk Light";
+  src: url("fonts/light/FoundersGrotesk-Light.eot");
+  src: url("fonts/light/FoundersGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("fonts/light/FoundersGrotesk-Light.woff") format("woff"), url("fonts/light/FoundersGrotesk-Light.ttf") format("truetype"), url("fonts/light/FoundersGrotesk-Light.svg#founders_grotesk_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Founders Grotesk Medium";
+  src: url("fonts/medium/FoundersGrotesk-Medium.eot");
+  src: url("fonts/medium/FoundersGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/medium/FoundersGrotesk-Medium.woff") format("woff"), url("fonts/medium/FoundersGrotesk-Medium.ttf") format("truetype"), url("fonts/medium/FoundersGrotesk-Medium.svg#founders_grotesk_medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url("fonts/regular/FoundersGrotesk-Regular.eot");
+  src: url("fonts/regular/FoundersGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/regular/FoundersGrotesk-Regular.woff") format("woff"), url("fonts/regular/FoundersGrotesk-Regular.ttf") format("truetype"), url("fonts/regular/FoundersGrotesk-Regular.svg#founders_grotesk_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .main-nav-item {
+    float: left;
+    padding-top: 15px;
+    text-align: center; }
+  #logo {
+    display: none; }
+  .hide {
+    display: none; }
+  #navbar {
+    position: absolute;
+    background-color: #000000;
+    height: 72px;
+    padding: 0;
+    width: 100%;
+    z-index: 3; }
+  #toggle-mobile {
+    display: none; }
+  .sub-nav-item {
+    display: none; }
+  .show > .sub-nav-item {
+    display: block; }
+  .show {
+    background-color: #000000;
+    z-index: 1; }
+  .headline {
+    font-size: 120px;
+    line-height: 126px;
+    font-family: "Founders Grotesk Light" sans-serif;
+    font-weight: 300; }
+  .body-copy {
+    font-size: 30px;
+    line-height: 35px;
+    font-family: "Founders Grotesk Light" sans-serif;
+    font-weight: 300; }
+  .chevron {
+    display: none; }
+  .col-1 {
+    width: 100%; }
+  .col-2 {
+    width: 50%; }
+  .col-3 {
+    width: 33.33333%; }
+  .col-4 {
+    width: 25%; }
+  .col-5 {
+    width: 20%; }
+  .col-6 {
+    width: 16.66667%; }
+  .col-7 {
+    width: 14.28571%; }
+  .col-8 {
+    width: 12.5%; }
+  .col-9 {
+    width: 11.11111%; }
+  .col-10 {
+    width: 10%; } }
+
+@font-face {
+  font-family: "Founders Grotesk Light";
+  src: url("fonts/light/FoundersGrotesk-Light.eot");
+  src: url("fonts/light/FoundersGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("fonts/light/FoundersGrotesk-Light.woff") format("woff"), url("fonts/light/FoundersGrotesk-Light.ttf") format("truetype"), url("fonts/light/FoundersGrotesk-Light.svg#founders_grotesk_light") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Founders Grotesk Medium";
+  src: url("fonts/medium/FoundersGrotesk-Medium.eot");
+  src: url("fonts/medium/FoundersGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/medium/FoundersGrotesk-Medium.woff") format("woff"), url("fonts/medium/FoundersGrotesk-Medium.ttf") format("truetype"), url("fonts/medium/FoundersGrotesk-Medium.svg#founders_grotesk_medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Founders Grotesk Regular";
+  src: url("fonts/regular/FoundersGrotesk-Regular.eot");
+  src: url("fonts/regular/FoundersGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/regular/FoundersGrotesk-Regular.woff") format("woff"), url("fonts/regular/FoundersGrotesk-Regular.ttf") format("truetype"), url("fonts/regular/FoundersGrotesk-Regular.svg#founders_grotesk_regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Shared Styles */
 body {
-  background: #000;
-  color: #a7aaa9;
-}
+  background: url(../images/background-image.jpg);
+  background-size: cover;
+  margin: 0; }
+
+#content {
+  width: 100%;
+  top: 60px;
+  padding-top: 60px;
+  height: 100%; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 h1 {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin: 0;
-  font: 20vmin/1 FoundersGroteskWeb;
+  color: #ffffff;
+  font: 20vmin/1 "Founders Grotesk Medium";
   /*letter-spacing: -0.06em;*/
-  text-align: center;
-}
+  text-align: center; }
+
+.mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2; }
+
+.eyebrow {
+  font-size: 18px;
+  line-height: 48px;
+  font-family: "Founders Grotesk Medium";
+  font-weight: 500;
+  letter-spacing: .35em; }
+
+.main-nav-item > a {
+  font-size: 18px;
+  line-height: 48px;
+  font-family: "Founders Grotesk Medium";
+  font-weight: 500;
+  color: #ffffff; }
+
+.main-nav-item:hover > a {
+  color: #a7aaa9; }
+
+.main-nav-item:hover {
+  cursor: pointer; }
+
+.sub-nav-item > a {
+  font-size: 18px;
+  line-height: 48px;
+  font-family: "Founders Grotesk Regular";
+  font-weight: 400;
+  color: #ffffff; }
+
+.sub-nav-item:hover > a {
+  color: #a7aaa9; }

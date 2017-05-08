@@ -19,7 +19,14 @@ Here are the guardrails for this exercise - please follow closely:
 $ npm i && npm start
 ```
 
-Nice to haves (things that we look for):
+## Jasmine Tests
+To run jasmine tests enter the following command
+
+```
+$ npm i && npm test
+```
+
+## Nice to haves (things that we look for):
 
 * Adherence to accessibility standards
 * Documentation
@@ -35,7 +42,7 @@ At a high level the navigation will have two main states:
 
 ## Files
 
-* ./bin/www - node.js server that will host the site and provie the api to construct the nav
+* ./bin/www - node.js server that will host the site and provide     the api to construct the nav
 
 ## API
 

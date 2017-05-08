@@ -1,0 +1,9 @@
+@import "../../node_modules/sass-font-face/_font-face.scss";
+
+$FoundersGrotesk-Light: 'Founders Grotesk Light' ;
+$FoundersGrotesk-Medium: 'Founders Grotesk Medium';
+$FoundersGrotesk-Regular: 'Founders Grotesk Regular';
+
+@include font-face($FoundersGrotesk-Light, 'fonts/light/', 'FoundersGrotesk-Light', 'founders_grotesk_light');
+@include font-face($FoundersGrotesk-Medium, 'fonts/medium/', 'FoundersGrotesk-Medium', 'founders_grotesk_medium');
+@include font-face($FoundersGrotesk-Regular, 'fonts/regular/', 'FoundersGrotesk-Regular', 'founders_grotesk_regular');

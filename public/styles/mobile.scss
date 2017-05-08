@@ -1,0 +1,122 @@
+@import 'fonts';
+@import 'variables';
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .headline {
+    font-size: 48px;
+    line-height: 50px;
+    font-family: $FoundersGrotesk-Light;
+    font-weight: 300;
+  }
+
+  .body-copy {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: $FoundersGrotesk-Light;
+    font-weight: 300;
+  }
+
+  .copyright {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $FoundersGrotesk-Light;
+    font-weight: 300;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 72px;
+    left: -400px;
+    background-color: $translucent-black;
+    width: 250px;
+    height: auto;
+    min-height: 800px;
+    z-index: 3;
+    transition: left 500ms;
+  }
+
+  #navbar.slide-right {
+    left: 0px;
+    transition: left 500ms;
+  }
+
+  #mobile-nav-header {
+    width: 100%;
+    background-color: black;
+    height: 72px;
+  }
+
+  .main-nav-item {
+    text-align: left;
+  }
+
+  .main-nav-item > a {
+    margin-left: 50px;
+  }
+
+  .sub-nav-item {
+    display: none;
+    //z-index: 4;
+  }
+
+  .show > .sub-nav-item {
+    display: block;
+    padding-left: 75px;
+    text-align: left;
+  }
+
+  .chevron {
+    margin-top: 20px;
+    margin-right: -40px;
+    float: left;
+    margin-left: 30px;
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-top: .2rem solid $white;
+    border-right: .2rem solid $white;
+    box-shadow: 0 0 0 lightgray;
+    transform: translate3d(0, -50%, 0) rotate(45deg);
+    transition: transform 500ms;
+  }
+
+  .chevron.rotate {
+    transform: translate3d(0, -50%, 0) rotate(135deg);
+    transition: transform 500ms;
+  }
+
+  #logo {
+    position: absolute;
+    left: -200px;
+    padding-top: 20px;
+    color: $white;
+    transition: left 500ms;
+  }
+
+  #logo.slide-right {
+    position: absolute;
+    left: 20px;
+    transition: left 500ms;
+  }
+
+  #toggle-mobile.slide-left {
+    background-image: url(../images/toggle-open.svg);
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 0px;
+    cursor: pointer;
+    transition: left 500ms, background-image 1000ms;
+  }
+
+  #toggle-mobile.slide-right {
+    position: absolute;
+    background-image: url(../images/toggle-close.svg);
+    width: 72px;
+    height: 72px;
+    cursor: pointer;
+    left: 180px;
+    transition: left 500ms, background-image 1000ms;
+  }
+}

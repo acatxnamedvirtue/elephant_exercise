@@ -1,10 +1,31 @@
 <!doctype html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Elephant NavExercise</title>
-  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="icon" href="./images/favicon.ico">
+  <script type="text/javascript" src="javascript/navItem.js"></script>
+  <script type="text/javascript" src="javascript/subNavItem.js"></script>
+  <script type="text/javascript" src="javascript/mainNavItem.js"></script>
+  <script type="text/javascript" src="javascript/nav.js"></script>
 </head>
-<body>
-<h1>Hello Elephant!</h1>
+<body id="body">
+<div id="mobile-nav-header">
+  <div id="logo" class="headline">Elephant</div>
+  <div id="toggle-mobile" class="slide-left"></div>
+</div>
+
+<div id="navbar" class="slide-left"></div>
+
+<div id="background"></div>
+<div id="content">
+  <!--<h1>Hello Elephant!</h1>-->
+</div>
+
+
+<script>
+  new Nav(document.getElementById("navbar")).render();
+</script>
 </body>
 </html>
